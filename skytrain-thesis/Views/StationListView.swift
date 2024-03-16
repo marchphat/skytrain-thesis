@@ -33,7 +33,7 @@ struct StationListView: View {
                 .frame(maxWidth: .infinity, alignment: .leading)
             
             StationSearchBar(searchText: $stationViewModel.searchStation)
-                .onChange(of: stationViewModel.searchStation) { _ in
+                .onChange(of: stationViewModel.searchStation) {
                     stationViewModel.filterSelectedStations(selectedLine: selectedStationLine,
                                                             currentView: currentView,
                                                             selectedFromStation: selectedFromStation,
@@ -41,7 +41,7 @@ struct StationListView: View {
                 }
             
             StationSearchBarFilter(selectedStationLine: $selectedStationLine)
-                .onChange(of: selectedStationLine) { _ in
+                .onChange(of: selectedStationLine) {
                     stationViewModel.filterSelectedStations(selectedLine: selectedStationLine,
                                                             currentView: currentView,
                                                             selectedFromStation: selectedFromStation,
