@@ -13,7 +13,6 @@
 		4FA292FB2BA1A8C0000B7285 /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA292FA2BA1A8C0000B7285 /* Station.swift */; };
 		4FA292FD2BA1A8ED000B7285 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA292FC2BA1A8ED000B7285 /* Route.swift */; };
 		4FA292FF2BA1A903000B7285 /* ViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA292FE2BA1A903000B7285 /* ViewState.swift */; };
-		4FA293012BA1A91B000B7285 /* Drawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA293002BA1A91B000B7285 /* Drawer.swift */; };
 		4FA293072BA1ABAC000B7285 /* UIScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA293062BA1ABAC000B7285 /* UIScreen.swift */; };
 		4FA293092BA1B0A6000B7285 /* StationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA293082BA1B0A6000B7285 /* StationViewModel.swift */; };
 		4FA2930C2BA1B18D000B7285 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 4FA2930B2BA1B18D000B7285 /* Alamofire */; };
@@ -62,7 +61,6 @@
 		4FA292FA2BA1A8C0000B7285 /* Station.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
 		4FA292FC2BA1A8ED000B7285 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		4FA292FE2BA1A903000B7285 /* ViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewState.swift; sourceTree = "<group>"; };
-		4FA293002BA1A91B000B7285 /* Drawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drawer.swift; sourceTree = "<group>"; };
 		4FA293062BA1ABAC000B7285 /* UIScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScreen.swift; sourceTree = "<group>"; };
 		4FA293082BA1B0A6000B7285 /* StationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationViewModel.swift; sourceTree = "<group>"; };
 		4FA293122BA1B1FE000B7285 /* RouteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteViewModel.swift; sourceTree = "<group>"; };
@@ -157,7 +155,6 @@
 				4FA292FA2BA1A8C0000B7285 /* Station.swift */,
 				4FA292FC2BA1A8ED000B7285 /* Route.swift */,
 				4FA292FE2BA1A903000B7285 /* ViewState.swift */,
-				4FA293002BA1A91B000B7285 /* Drawer.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -380,7 +377,6 @@
 				4FA293352BA3A139000B7285 /* StationDetailsCell.swift in Sources */,
 				4FA2933A2BA3A176000B7285 /* GetRoutesDetailsCell.swift in Sources */,
 				4FA292C52BA19E0C000B7285 /* skytrain_thesisApp.swift in Sources */,
-				4FA293012BA1A91B000B7285 /* Drawer.swift in Sources */,
 				4FA293072BA1ABAC000B7285 /* UIScreen.swift in Sources */,
 				4FA2931F2BA1B3F1000B7285 /* Pointer.swift in Sources */,
 			);

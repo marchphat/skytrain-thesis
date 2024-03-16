@@ -9,13 +9,11 @@ import Foundation
 import Alamofire
 
 final class RouteViewModel: ObservableObject {
-    // MARK: - Published Properties
     @Published var allRoutes = [[Route]]()
     @Published var shortestRoute = [Route]()
     @Published var allRouteFees = [Float]()
     @Published var cheapestRoute: Float = 0
     
-    // MARK: - Public Methods
     func fetchRouteFees(fromStation: Station?, toStation: Station?) {
         guard let fromStation = fromStation, let toStation = toStation else {
             print("Station is nil value.")

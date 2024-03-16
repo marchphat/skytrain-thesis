@@ -22,7 +22,6 @@ final class StationViewModel: ObservableObject {
         fetchStations()
     }
     
-    // MARK: - Private Methods
     private func fetchStations() {
         guard let url = Bundle.main.url(forResource: "Stations", withExtension: "json") else {
             print("Stations.json file not found")
@@ -115,7 +114,6 @@ final class StationViewModel: ObservableObject {
         }
     }
     
-    // MARK: - Public Methods
     func filterSelectedStations(selectedLine: StationLine, currentView: ViewState, selectedFromStation: Station?, selectedToStation: Station?) {
         selectedStations = allStations.filter { station in
             return isMatched(station: station,
