@@ -8,20 +8,43 @@
 
 /* Begin PBXBuildFile section */
 		4FA292C52BA19E0C000B7285 /* skytrain_thesisApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA292C42BA19E0C000B7285 /* skytrain_thesisApp.swift */; };
-		4FA292C72BA19E0C000B7285 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA292C62BA19E0C000B7285 /* ContentView.swift */; };
 		4FA292C92BA19E0D000B7285 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FA292C82BA19E0D000B7285 /* Assets.xcassets */; };
 		4FA292CC2BA19E0D000B7285 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FA292CB2BA19E0D000B7285 /* Preview Assets.xcassets */; };
+		4FA292F42BA1A5D5000B7285 /* MockStations.json in Sources */ = {isa = PBXBuildFile; fileRef = 4FA292F32BA1A5D5000B7285 /* MockStations.json */; };
+		4FA292FB2BA1A8C0000B7285 /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA292FA2BA1A8C0000B7285 /* Station.swift */; };
+		4FA292FD2BA1A8ED000B7285 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA292FC2BA1A8ED000B7285 /* Route.swift */; };
+		4FA292FF2BA1A903000B7285 /* ViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA292FE2BA1A903000B7285 /* ViewState.swift */; };
+		4FA293012BA1A91B000B7285 /* Drawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA293002BA1A91B000B7285 /* Drawer.swift */; };
+		4FA293072BA1ABAC000B7285 /* UIScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA293062BA1ABAC000B7285 /* UIScreen.swift */; };
+		4FA293092BA1B0A6000B7285 /* StationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA293082BA1B0A6000B7285 /* StationViewModel.swift */; };
+		4FA2930C2BA1B18D000B7285 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 4FA2930B2BA1B18D000B7285 /* Alamofire */; };
+		4FA2930E2BA1B18D000B7285 /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 4FA2930D2BA1B18D000B7285 /* AlamofireDynamic */; };
+		4FA293112BA1B1A8000B7285 /* Drawer in Frameworks */ = {isa = PBXBuildFile; productRef = 4FA293102BA1B1A8000B7285 /* Drawer */; };
+		4FA293132BA1B1FE000B7285 /* RouteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA293122BA1B1FE000B7285 /* RouteViewModel.swift */; };
+		4FA293152BA1B253000B7285 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA293142BA1B253000B7285 /* HomeView.swift */; };
+		4FA293172BA1B277000B7285 /* StationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA293162BA1B277000B7285 /* StationListView.swift */; };
+		4FA293192BA1B28F000B7285 /* GetRoutesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA293182BA1B28F000B7285 /* GetRoutesListView.swift */; };
+		4FA2931B2BA1B2A6000B7285 /* RouteCreatedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA2931A2BA1B2A6000B7285 /* RouteCreatedView.swift */; };
+		4FA2931F2BA1B3F1000B7285 /* Pointer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA2931E2BA1B3F1000B7285 /* Pointer.swift */; };
+		4FA293212BA1B407000B7285 /* CloseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA293202BA1B407000B7285 /* CloseButton.swift */; };
+		4FA293242BA1B448000B7285 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA293232BA1B448000B7285 /* MapView.swift */; };
+		4FA293262BA1B470000B7285 /* AnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA293252BA1B470000B7285 /* AnnotationView.swift */; };
+		4FA293282BA1B500000B7285 /* StationSearchBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA293272BA1B500000B7285 /* StationSearchBox.swift */; };
+		4FA2932A2BA1B558000B7285 /* StationSearchField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA293292BA1B558000B7285 /* StationSearchField.swift */; };
+		4FA2932C2BA3A0BA000B7285 /* MapButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA2932B2BA3A0BA000B7285 /* MapButton.swift */; };
+		4FA2932F2BA3A0F9000B7285 /* StationSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA2932E2BA3A0F9000B7285 /* StationSearchBar.swift */; };
+		4FA293312BA3A103000B7285 /* StationSearchBarFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA293302BA3A103000B7285 /* StationSearchBarFilter.swift */; };
+		4FA293332BA3A122000B7285 /* StationSearchList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA293322BA3A122000B7285 /* StationSearchList.swift */; };
+		4FA293352BA3A139000B7285 /* StationDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA293342BA3A139000B7285 /* StationDetailsCell.swift */; };
+		4FA293382BA3A166000B7285 /* GetRoutesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA293372BA3A166000B7285 /* GetRoutesList.swift */; };
+		4FA2933A2BA3A176000B7285 /* GetRoutesDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA293392BA3A176000B7285 /* GetRoutesDetailsCell.swift */; };
+		4FA2933D2BA3A19A000B7285 /* RouteViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA2933C2BA3A19A000B7285 /* RouteViewHeader.swift */; };
+		4FA2933F2BA3A1AC000B7285 /* RouteCreated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA2933E2BA3A1AC000B7285 /* RouteCreated.swift */; };
+		4FA293412BA3A1BB000B7285 /* RouteDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA293402BA3A1BB000B7285 /* RouteDetailsCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		4FA292D22BA19E0D000B7285 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4FA292B92BA19E0C000B7285 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4FA292C02BA19E0C000B7285;
-			remoteInfo = "skytrain-thesis";
-		};
-		4FA292DC2BA19E0D000B7285 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4FA292B92BA19E0C000B7285 /* Project object */;
 			proxyType = 1;
@@ -33,11 +56,37 @@
 /* Begin PBXFileReference section */
 		4FA292C12BA19E0C000B7285 /* skytrain-thesis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "skytrain-thesis.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FA292C42BA19E0C000B7285 /* skytrain_thesisApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = skytrain_thesisApp.swift; sourceTree = "<group>"; };
-		4FA292C62BA19E0C000B7285 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4FA292C82BA19E0D000B7285 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4FA292CB2BA19E0D000B7285 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4FA292D12BA19E0D000B7285 /* skytrain-thesisTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "skytrain-thesisTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4FA292DB2BA19E0D000B7285 /* skytrain-thesisUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "skytrain-thesisUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FA292F32BA1A5D5000B7285 /* MockStations.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MockStations.json; sourceTree = "<group>"; };
+		4FA292FA2BA1A8C0000B7285 /* Station.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
+		4FA292FC2BA1A8ED000B7285 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		4FA292FE2BA1A903000B7285 /* ViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewState.swift; sourceTree = "<group>"; };
+		4FA293002BA1A91B000B7285 /* Drawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drawer.swift; sourceTree = "<group>"; };
+		4FA293062BA1ABAC000B7285 /* UIScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScreen.swift; sourceTree = "<group>"; };
+		4FA293082BA1B0A6000B7285 /* StationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationViewModel.swift; sourceTree = "<group>"; };
+		4FA293122BA1B1FE000B7285 /* RouteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteViewModel.swift; sourceTree = "<group>"; };
+		4FA293142BA1B253000B7285 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		4FA293162BA1B277000B7285 /* StationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationListView.swift; sourceTree = "<group>"; };
+		4FA293182BA1B28F000B7285 /* GetRoutesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRoutesListView.swift; sourceTree = "<group>"; };
+		4FA2931A2BA1B2A6000B7285 /* RouteCreatedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteCreatedView.swift; sourceTree = "<group>"; };
+		4FA2931E2BA1B3F1000B7285 /* Pointer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pointer.swift; sourceTree = "<group>"; };
+		4FA293202BA1B407000B7285 /* CloseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloseButton.swift; sourceTree = "<group>"; };
+		4FA293232BA1B448000B7285 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		4FA293252BA1B470000B7285 /* AnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationView.swift; sourceTree = "<group>"; };
+		4FA293272BA1B500000B7285 /* StationSearchBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationSearchBox.swift; sourceTree = "<group>"; };
+		4FA293292BA1B558000B7285 /* StationSearchField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationSearchField.swift; sourceTree = "<group>"; };
+		4FA2932B2BA3A0BA000B7285 /* MapButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapButton.swift; sourceTree = "<group>"; };
+		4FA2932E2BA3A0F9000B7285 /* StationSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationSearchBar.swift; sourceTree = "<group>"; };
+		4FA293302BA3A103000B7285 /* StationSearchBarFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationSearchBarFilter.swift; sourceTree = "<group>"; };
+		4FA293322BA3A122000B7285 /* StationSearchList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationSearchList.swift; sourceTree = "<group>"; };
+		4FA293342BA3A139000B7285 /* StationDetailsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationDetailsCell.swift; sourceTree = "<group>"; };
+		4FA293372BA3A166000B7285 /* GetRoutesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRoutesList.swift; sourceTree = "<group>"; };
+		4FA293392BA3A176000B7285 /* GetRoutesDetailsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRoutesDetailsCell.swift; sourceTree = "<group>"; };
+		4FA2933C2BA3A19A000B7285 /* RouteViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteViewHeader.swift; sourceTree = "<group>"; };
+		4FA2933E2BA3A1AC000B7285 /* RouteCreated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteCreated.swift; sourceTree = "<group>"; };
+		4FA293402BA3A1BB000B7285 /* RouteDetailsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteDetailsCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,17 +94,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FA293112BA1B1A8000B7285 /* Drawer in Frameworks */,
+				4FA2930E2BA1B18D000B7285 /* AlamofireDynamic in Frameworks */,
+				4FA2930C2BA1B18D000B7285 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		4FA292CE2BA19E0D000B7285 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4FA292D82BA19E0D000B7285 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -78,7 +123,6 @@
 			children = (
 				4FA292C12BA19E0C000B7285 /* skytrain-thesis.app */,
 				4FA292D12BA19E0D000B7285 /* skytrain-thesisTests.xctest */,
-				4FA292DB2BA19E0D000B7285 /* skytrain-thesisUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -87,8 +131,12 @@
 			isa = PBXGroup;
 			children = (
 				4FA292C42BA19E0C000B7285 /* skytrain_thesisApp.swift */,
-				4FA292C62BA19E0C000B7285 /* ContentView.swift */,
-				4FA292C82BA19E0D000B7285 /* Assets.xcassets */,
+				4FA292F52BA1A79B000B7285 /* Models */,
+				4FA292F72BA1A7BC000B7285 /* ViewModels */,
+				4FA292F62BA1A7A1000B7285 /* Views */,
+				4FA2931D2BA1B3D0000B7285 /* Components */,
+				4FA292F82BA1A7E6000B7285 /* Extensions */,
+				4FA292F92BA1A7FE000B7285 /* Supporting Files */,
 				4FA292CA2BA19E0D000B7285 /* Preview Content */,
 			);
 			path = "skytrain-thesis";
@@ -100,6 +148,109 @@
 				4FA292CB2BA19E0D000B7285 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4FA292F52BA1A79B000B7285 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4FA292FA2BA1A8C0000B7285 /* Station.swift */,
+				4FA292FC2BA1A8ED000B7285 /* Route.swift */,
+				4FA292FE2BA1A903000B7285 /* ViewState.swift */,
+				4FA293002BA1A91B000B7285 /* Drawer.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4FA292F62BA1A7A1000B7285 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4FA293142BA1B253000B7285 /* HomeView.swift */,
+				4FA293162BA1B277000B7285 /* StationListView.swift */,
+				4FA293182BA1B28F000B7285 /* GetRoutesListView.swift */,
+				4FA2931A2BA1B2A6000B7285 /* RouteCreatedView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4FA292F72BA1A7BC000B7285 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				4FA293082BA1B0A6000B7285 /* StationViewModel.swift */,
+				4FA293122BA1B1FE000B7285 /* RouteViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		4FA292F82BA1A7E6000B7285 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4FA293062BA1ABAC000B7285 /* UIScreen.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4FA292F92BA1A7FE000B7285 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4FA292F32BA1A5D5000B7285 /* MockStations.json */,
+				4FA292C82BA19E0D000B7285 /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4FA2931D2BA1B3D0000B7285 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				4FA2931E2BA1B3F1000B7285 /* Pointer.swift */,
+				4FA293202BA1B407000B7285 /* CloseButton.swift */,
+				4FA293222BA1B430000B7285 /* HomeView */,
+				4FA2932D2BA3A0CE000B7285 /* StationListView */,
+				4FA293362BA3A14F000B7285 /* GetRoutesView */,
+				4FA2933B2BA3A187000B7285 /* RouteView */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		4FA293222BA1B430000B7285 /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				4FA293232BA1B448000B7285 /* MapView.swift */,
+				4FA293252BA1B470000B7285 /* AnnotationView.swift */,
+				4FA293272BA1B500000B7285 /* StationSearchBox.swift */,
+				4FA293292BA1B558000B7285 /* StationSearchField.swift */,
+				4FA2932B2BA3A0BA000B7285 /* MapButton.swift */,
+			);
+			path = HomeView;
+			sourceTree = "<group>";
+		};
+		4FA2932D2BA3A0CE000B7285 /* StationListView */ = {
+			isa = PBXGroup;
+			children = (
+				4FA2932E2BA3A0F9000B7285 /* StationSearchBar.swift */,
+				4FA293302BA3A103000B7285 /* StationSearchBarFilter.swift */,
+				4FA293322BA3A122000B7285 /* StationSearchList.swift */,
+				4FA293342BA3A139000B7285 /* StationDetailsCell.swift */,
+			);
+			path = StationListView;
+			sourceTree = "<group>";
+		};
+		4FA293362BA3A14F000B7285 /* GetRoutesView */ = {
+			isa = PBXGroup;
+			children = (
+				4FA293372BA3A166000B7285 /* GetRoutesList.swift */,
+				4FA293392BA3A176000B7285 /* GetRoutesDetailsCell.swift */,
+			);
+			path = GetRoutesView;
+			sourceTree = "<group>";
+		};
+		4FA2933B2BA3A187000B7285 /* RouteView */ = {
+			isa = PBXGroup;
+			children = (
+				4FA2933C2BA3A19A000B7285 /* RouteViewHeader.swift */,
+				4FA2933E2BA3A1AC000B7285 /* RouteCreated.swift */,
+				4FA293402BA3A1BB000B7285 /* RouteDetailsCell.swift */,
+			);
+			path = RouteView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,6 +269,11 @@
 			dependencies = (
 			);
 			name = "skytrain-thesis";
+			packageProductDependencies = (
+				4FA2930B2BA1B18D000B7285 /* Alamofire */,
+				4FA2930D2BA1B18D000B7285 /* AlamofireDynamic */,
+				4FA293102BA1B1A8000B7285 /* Drawer */,
+			);
 			productName = "skytrain-thesis";
 			productReference = 4FA292C12BA19E0C000B7285 /* skytrain-thesis.app */;
 			productType = "com.apple.product-type.application";
@@ -140,24 +296,6 @@
 			productReference = 4FA292D12BA19E0D000B7285 /* skytrain-thesisTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		4FA292DA2BA19E0D000B7285 /* skytrain-thesisUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4FA292EB2BA19E0D000B7285 /* Build configuration list for PBXNativeTarget "skytrain-thesisUITests" */;
-			buildPhases = (
-				4FA292D72BA19E0D000B7285 /* Sources */,
-				4FA292D82BA19E0D000B7285 /* Frameworks */,
-				4FA292D92BA19E0D000B7285 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4FA292DD2BA19E0D000B7285 /* PBXTargetDependency */,
-			);
-			name = "skytrain-thesisUITests";
-			productName = "skytrain-thesisUITests";
-			productReference = 4FA292DB2BA19E0D000B7285 /* skytrain-thesisUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -175,10 +313,6 @@
 						CreatedOnToolsVersion = 15.2;
 						TestTargetID = 4FA292C02BA19E0C000B7285;
 					};
-					4FA292DA2BA19E0D000B7285 = {
-						CreatedOnToolsVersion = 15.2;
-						TestTargetID = 4FA292C02BA19E0C000B7285;
-					};
 				};
 			};
 			buildConfigurationList = 4FA292BC2BA19E0C000B7285 /* Build configuration list for PBXProject "skytrain-thesis" */;
@@ -190,13 +324,16 @@
 				Base,
 			);
 			mainGroup = 4FA292B82BA19E0C000B7285;
+			packageReferences = (
+				4FA2930A2BA1B18D000B7285 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				4FA2930F2BA1B1A8000B7285 /* XCRemoteSwiftPackageReference "swiftui-drawer" */,
+			);
 			productRefGroup = 4FA292C22BA19E0C000B7285 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				4FA292C02BA19E0C000B7285 /* skytrain-thesis */,
 				4FA292D02BA19E0D000B7285 /* skytrain-thesisTests */,
-				4FA292DA2BA19E0D000B7285 /* skytrain-thesisUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -218,13 +355,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4FA292D92BA19E0D000B7285 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -232,19 +362,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4FA292C72BA19E0C000B7285 /* ContentView.swift in Sources */,
+				4FA293212BA1B407000B7285 /* CloseButton.swift in Sources */,
+				4FA293242BA1B448000B7285 /* MapView.swift in Sources */,
+				4FA293092BA1B0A6000B7285 /* StationViewModel.swift in Sources */,
+				4FA293172BA1B277000B7285 /* StationListView.swift in Sources */,
+				4FA2932C2BA3A0BA000B7285 /* MapButton.swift in Sources */,
+				4FA293412BA3A1BB000B7285 /* RouteDetailsCell.swift in Sources */,
+				4FA293192BA1B28F000B7285 /* GetRoutesListView.swift in Sources */,
+				4FA292F42BA1A5D5000B7285 /* MockStations.json in Sources */,
+				4FA293282BA1B500000B7285 /* StationSearchBox.swift in Sources */,
+				4FA293382BA3A166000B7285 /* GetRoutesList.swift in Sources */,
+				4FA293312BA3A103000B7285 /* StationSearchBarFilter.swift in Sources */,
+				4FA293132BA1B1FE000B7285 /* RouteViewModel.swift in Sources */,
+				4FA292FF2BA1A903000B7285 /* ViewState.swift in Sources */,
+				4FA2933F2BA3A1AC000B7285 /* RouteCreated.swift in Sources */,
+				4FA293262BA1B470000B7285 /* AnnotationView.swift in Sources */,
+				4FA2933D2BA3A19A000B7285 /* RouteViewHeader.swift in Sources */,
+				4FA293332BA3A122000B7285 /* StationSearchList.swift in Sources */,
+				4FA293152BA1B253000B7285 /* HomeView.swift in Sources */,
+				4FA2931B2BA1B2A6000B7285 /* RouteCreatedView.swift in Sources */,
+				4FA2932A2BA1B558000B7285 /* StationSearchField.swift in Sources */,
+				4FA292FB2BA1A8C0000B7285 /* Station.swift in Sources */,
+				4FA2932F2BA3A0F9000B7285 /* StationSearchBar.swift in Sources */,
+				4FA292FD2BA1A8ED000B7285 /* Route.swift in Sources */,
+				4FA293352BA3A139000B7285 /* StationDetailsCell.swift in Sources */,
+				4FA2933A2BA3A176000B7285 /* GetRoutesDetailsCell.swift in Sources */,
 				4FA292C52BA19E0C000B7285 /* skytrain_thesisApp.swift in Sources */,
+				4FA293012BA1A91B000B7285 /* Drawer.swift in Sources */,
+				4FA293072BA1ABAC000B7285 /* UIScreen.swift in Sources */,
+				4FA2931F2BA1B3F1000B7285 /* Pointer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		4FA292CD2BA19E0D000B7285 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4FA292D72BA19E0D000B7285 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -258,11 +408,6 @@
 			isa = PBXTargetDependency;
 			target = 4FA292C02BA19E0C000B7285 /* skytrain-thesis */;
 			targetProxy = 4FA292D22BA19E0D000B7285 /* PBXContainerItemProxy */;
-		};
-		4FA292DD2BA19E0D000B7285 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4FA292C02BA19E0C000B7285 /* skytrain-thesis */;
-			targetProxy = 4FA292DC2BA19E0D000B7285 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -484,42 +629,6 @@
 			};
 			name = Release;
 		};
-		4FA292EC2BA19E0D000B7285 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = X34AX4W9SU;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nantanat.skytrain-thesisUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "skytrain-thesis";
-			};
-			name = Debug;
-		};
-		4FA292ED2BA19E0D000B7285 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = X34AX4W9SU;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nantanat.skytrain-thesisUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "skytrain-thesis";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -550,16 +659,44 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4FA292EB2BA19E0D000B7285 /* Build configuration list for PBXNativeTarget "skytrain-thesisUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4FA292EC2BA19E0D000B7285 /* Debug */,
-				4FA292ED2BA19E0D000B7285 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4FA2930A2BA1B18D000B7285 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.0;
+			};
+		};
+		4FA2930F2BA1B1A8000B7285 /* XCRemoteSwiftPackageReference "swiftui-drawer" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/maustinstar/swiftui-drawer.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4FA2930B2BA1B18D000B7285 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4FA2930A2BA1B18D000B7285 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		4FA2930D2BA1B18D000B7285 /* AlamofireDynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4FA2930A2BA1B18D000B7285 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = AlamofireDynamic;
+		};
+		4FA293102BA1B1A8000B7285 /* Drawer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4FA2930F2BA1B1A8000B7285 /* XCRemoteSwiftPackageReference "swiftui-drawer" */;
+			productName = Drawer;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4FA292B92BA19E0C000B7285 /* Project object */;
 }

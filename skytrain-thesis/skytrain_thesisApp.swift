@@ -11,7 +11,7 @@ import SwiftUI
 struct skytrain_thesisApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeView()
         }
     }
 }
