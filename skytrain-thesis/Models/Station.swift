@@ -8,30 +8,30 @@
 import Foundation
 import CoreLocation
 
-struct Station: Decodable, Equatable, Identifiable {
-    let id: String?
+struct Station: Codable, Equatable, Identifiable {
+    let id = UUID()
+    let stationId: String?
     let name: String?
-    let line: String?
-    let lineColor: String?
-    let isExtended: Bool
     let latitude: Double
     let longitude: Double
+    let line: String?
+    let lineColor: String?
     var arriveTime: String?
-    
+    let isExtended: Bool
     
     var coordinate: CLLocationCoordinate2D {
         CLLocationCoordinate2D(latitude: self.latitude, longitude: self.longitude)
     }
     
-    enum CodingKeys: String, CodingKey {
-        case id = "station_id"
-        case name = "station_name"
-        case line = "station_line"
-        case lineColor = "station_linecolor"
-        case isExtended = "is_extended"
-        case latitude = "latitude"
-        case longitude = "longitude"
-        case arriveTime = "arriveTime"
+    enum CodingKeys: CodingKey {
+        case stationId
+        case name
+        case line
+        case lineColor
+        case isExtended
+        case latitude
+        case longitude
+        case arriveTime
     }
 }
 

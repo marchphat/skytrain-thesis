@@ -32,7 +32,7 @@ struct StationDetailsCell: View {
             //MARK: - Station Details
             VStack(alignment: .leading) {
                 HStack {
-                    Text(station.id ?? "ID not found.")
+                    Text(station.stationId ?? "ID not found.")
                         .font(.subheadline)
                         .fontWeight(.bold)
                 }

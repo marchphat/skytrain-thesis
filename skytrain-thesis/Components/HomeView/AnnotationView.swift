@@ -58,7 +58,7 @@ struct StationName: View {
     let station: Station
 
     var body: some View {
-        let id = station.id ?? ""
+        let id = station.stationId ?? ""
         let name = station.name ?? ""
 
         Text("\(id) \(name)")

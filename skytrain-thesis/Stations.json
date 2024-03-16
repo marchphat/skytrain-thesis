@@ -1,6 +1,6 @@
 [
     {
-        "id": "A1",
+        "stationId": "A1",
         "name": "Suvarnabhumi ARL",
         "latitude": 13.703119561182797,
         "longitude": 100.75187358910955,
@@ -10,7 +10,7 @@
         "isExtended": false
     },
     {
-        "id": "A2",
+        "stationId": "A2",
         "name": "Lat Krabang ARL",
         "latitude": 13.734276250159681,
         "longitude": 100.74759724392246,
@@ -20,7 +20,7 @@
         "isExtended": false
     },
     {
-        "id": "A3",
+        "stationId": "A3",
         "name": "Ban Thap Chang ARL",
         "latitude": 13.739516797582066,
         "longitude": 100.69045284398449,
@@ -30,7 +30,7 @@
         "isExtended": false
     },
     {
-        "id": "A4",
+        "stationId": "A4",
         "name": "Hua Mak",
         "latitude": 13.746004409350032,
         "longitude": 100.64560053511678,
@@ -40,7 +40,7 @@
         "isExtended": false
     },
     {
-        "id": "A5",
+        "stationId": "A5",
         "name": "Ramkhamhaeng",
         "latitude": 13.749561204985838,
         "longitude": 100.60109728071038,
@@ -50,7 +50,7 @@
         "isExtended": false
     },
     {
-        "id": "A6",
+        "stationId": "A6",
         "name": "Makkasan",
         "latitude": 13.75835007181401,
         "longitude": 100.560764810538121,
@@ -60,7 +60,7 @@
         "isExtended": false
     },
     {
-        "id": "A7",
+        "stationId": "A7",
         "name": "Ratchaprarop",
         "latitude": 13.761253848376082,
         "longitude": 100.54256523334259,
@@ -70,7 +70,7 @@
         "isExtended": false
     },
     {
-        "id": "A8",
+        "stationId": "A8",
         "name": "Phaya Thai",
         "latitude": 13.763686630249191,
         "longitude": 100.53387434233079,
@@ -80,3 +80,4 @@
         "isExtended": false
     }
 ]
+

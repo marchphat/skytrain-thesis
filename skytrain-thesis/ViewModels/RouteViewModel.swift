@@ -22,7 +22,7 @@ final class RouteViewModel: ObservableObject {
             return
         }
         
-        let url = "http://localhost:5214/api/Route/fees/\(fromStation.id!)-\(toStation.id!)"
+        let url = "http://localhost:5214/api/Route/fees/\(fromStation.stationId!)-\(toStation.stationId!)"
         
         AF.request(url).validate().responseDecodable(of: [Float].self) { [weak self] response in
             guard let self = self else { return }
@@ -44,7 +44,7 @@ final class RouteViewModel: ObservableObject {
             return
         }
         
-        let url = "http://localhost:5214/api/Route/\(fromStation.id!)-\(toStation.id!)"
+        let url = "http://localhost:5214/api/Route/\(fromStation.stationId!)-\(toStation.stationId!)"
         
         AF.request(url).validate().responseDecodable(of: [[Route]].self) { [weak self] response in
             guard let self = self else { return }
