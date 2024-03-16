@@ -59,7 +59,7 @@ struct StationListView: View {
         }
         .padding(.top, paddingTop)
         .background(Color.white)
-        .onChange(of: stationViewModel.allStations) { _ in
+        .onChange(of: stationViewModel.allStations) {
             stationViewModel.filterSelectedStations(selectedLine: selectedStationLine,
                                                     currentView: currentView,
                                                     selectedFromStation: selectedFromStation,
