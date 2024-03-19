@@ -13,9 +13,9 @@ struct RouteViewHeader: View {
     
     private var textColor: Color {
         switch stationType {
-        case "selectedFromStation":
+        case "selectedStarting":
             return Color.gray
-        case "selectedToStation":
+        case "selectedDestination":
             return Color.blue
         default:
             return Color.gray

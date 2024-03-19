@@ -10,9 +10,10 @@ import MapKit
 
 struct MapView: View {
     @ObservedObject private var stationViewModel = StationViewModel()
+    
     @Binding var previousView: ViewState
-    @Binding var selectedFromStation: Station?
-    @Binding var selectedToStation: Station?
+    @Binding var selectedStarting: Station?
+    @Binding var selectedDestination: Station?
     
     //MARK: - Phaya Thai ARL
     private let defaultStation = CLLocationCoordinate2D(latitude: 13.780825439075091, longitude:  100.54287689074913)
@@ -20,10 +21,10 @@ struct MapView: View {
     private var region: MKCoordinateRegion {
         let centerCoordinate: CLLocationCoordinate2D?
         switch previousView {
-        case .searchFromStation:
-            centerCoordinate = selectedFromStation?.coordinate
-        case .searchToStation:
-            centerCoordinate = selectedToStation?.coordinate
+        case .searchStartingStation:
+            centerCoordinate = selectedStarting?.coordinate
+        case .searchDestination:
+            centerCoordinate = selectedDestination?.coordinate
         case .home:
             centerCoordinate = defaultStation
         default:

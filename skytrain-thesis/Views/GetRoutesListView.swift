@@ -13,8 +13,8 @@ struct GetRoutesListView: View {
     @State private var paddingTop: CGFloat = 429
     
     @Binding var currentView: ViewState
-    @Binding var selectedFromStation: Station?
-    @Binding var selectedToStation: Station?
+    @Binding var selectedStarting: Station?
+    @Binding var selectedDestination: Station?
     @Binding var selectedRoute: [Route]?
     @Binding var selectedRouteFees: Float
     
@@ -32,7 +32,7 @@ struct GetRoutesListView: View {
                 .padding(.bottom, 5)
                 .frame(maxWidth: .infinity, alignment: .leading)
             
-            ListViewHeaderWithPointer(selectedFromStation: $selectedFromStation, selectedToStation: $selectedToStation)
+            ListViewHeaderWithPointer(selectedStarting: $selectedStarting, selectedDestination: $selectedDestination)
             
             Divider()
                 .padding(.top, 8)
@@ -49,10 +49,10 @@ struct GetRoutesListView: View {
         .padding(.top, paddingTop)
         .background(Color.white)
         .onAppear(perform: {
-            routeViewModel.fetchRoutes(fromStation: selectedFromStation,
-                                       toStation: selectedToStation)
+            routeViewModel.fetchRoutes(fromStation: selectedStarting,
+                                       toStation: selectedDestination)
             
-            routeViewModel.fetchRouteFees(fromStation: selectedFromStation, toStation: selectedToStation)
+            routeViewModel.fetchRouteFees(fromStation: selectedStarting, toStation: selectedDestination)
                 
             withAnimation(.spring(response: 0.4, dampingFraction: 0.6)) {
                 paddingTop = 0
@@ -65,19 +65,19 @@ struct GetRoutesListView: View {
 struct ListViewHeaderWithPointer: View {
     @State private var pointerStraightHeight: CGFloat = 15
     
-    @Binding var selectedFromStation: Station?
-    @Binding var selectedToStation: Station?
+    @Binding var selectedStarting: Station?
+    @Binding var selectedDestination: Station?
 
     var body: some View {
         HStack {
             Pointer(straightlineHeight: $pointerStraightHeight)
             
             VStack {
-                RouteViewHeader(selectedStation: $selectedFromStation,
-                                stationType: "selectedFromStation")
+                RouteViewHeader(selectedStation: $selectedStarting,
+                                stationType: "selectedStarting")
                 
-                RouteViewHeader(selectedStation: $selectedToStation,
-                                stationType: "selectedToStation")
+                RouteViewHeader(selectedStation: $selectedDestination,
+                                stationType: "selectedDestination")
             }
             .padding(.leading, 5)
             

@@ -7,7 +7,9 @@
         "line": "arl",
         "lineColor": "red",
         "arriveTime": "12:00",
-        "isExtended": false
+        "isExtended": false,
+        "positionX": 4.775,
+        "positionY": 3.67
     },
     {
         "stationId": "A2",
@@ -17,7 +19,9 @@
         "line": "arl",
         "lineColor": "red",
         "arriveTime": "12:00",
-        "isExtended": false
+        "isExtended": false,
+        "positionX": 4.69,
+        "positionY": 3.46
     },
     {
         "stationId": "A3",
@@ -27,7 +31,9 @@
         "line": "arl",
         "lineColor": "red",
         "arriveTime": "12:00",
-        "isExtended": false
+        "isExtended": false,
+        "positionX": 4.39,
+        "positionY": 3.46
     },
     {
         "stationId": "A4",
@@ -37,7 +43,9 @@
         "line": "arl",
         "lineColor": "red",
         "arriveTime": "12:00",
-        "isExtended": false
+        "isExtended": false,
+        "positionX": 4.09,
+        "positionY": 3.46
     },
     {
         "stationId": "A5",
@@ -47,7 +55,9 @@
         "line": "arl",
         "lineColor": "red",
         "arriveTime": "12:00",
-        "isExtended": false
+        "isExtended": false,
+        "positionX": 3.565,
+        "positionY": 3.46
     },
     {
         "stationId": "A6",
@@ -57,7 +67,9 @@
         "line": "arl",
         "lineColor": "red",
         "arriveTime": "12:00",
-        "isExtended": false
+        "isExtended": false,
+        "positionX": 3.01,
+        "positionY": 3.46
     },
     {
         "stationId": "A7",
@@ -67,7 +79,9 @@
         "line": "arl",
         "lineColor": "red",
         "arriveTime": "12:00",
-        "isExtended": false
+        "isExtended": false,
+        "positionX": 2.745,
+        "positionY": 3.46
     },
     {
         "stationId": "A8",
@@ -77,7 +91,9 @@
         "line": "arl",
         "lineColor": "red",
         "arriveTime": "12:00",
-        "isExtended": false
+        "isExtended": false,
+        "positionX": 2.49,
+        "positionY": 3.46
     }
 ]
 

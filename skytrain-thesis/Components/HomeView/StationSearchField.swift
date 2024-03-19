@@ -16,7 +16,7 @@ struct StationSearchField: View {
         case "From":
             return selectedStation?.name ?? "Starting Station"
         case "To":
-            return selectedStation?.name ?? "Where to?"
+            return selectedStation?.name ?? "Destination"
         default:
             return ""
         }

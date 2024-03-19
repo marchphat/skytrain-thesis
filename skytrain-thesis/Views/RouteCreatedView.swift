@@ -17,8 +17,8 @@ struct RouteCreatedView: View {
     @State private var drawerHeights = drawerDefault
     
     @Binding var currentView: ViewState
-    @Binding var selectedFromStation: Station?
-    @Binding var selectedToStation: Station?
+    @Binding var selectedStarting: Station?
+    @Binding var selectedDestination: Station?
     @Binding var selectedRoute: [Route]?
     @Binding var selectedRouteFees: Float
     
@@ -63,9 +63,9 @@ struct RouteCreatedView: View {
                         Pointer(straightlineHeight: $pointerStraightHeight)
                         
                         VStack {
-                            RouteViewHeader(selectedStation: $selectedFromStation, stationType: "selectedFromStation")
+                            RouteViewHeader(selectedStation: $selectedStarting, stationType: "selectedStarting")
                             
-                            RouteViewHeader(selectedStation: $selectedToStation, stationType: "selectedToStation")
+                            RouteViewHeader(selectedStation: $selectedDestination, stationType: "selectedDestination")
                         }
                         .padding(.leading, 5)
                         

@@ -9,17 +9,21 @@ import SwiftUI
 
 struct HomeView: View {
     @State private var currentView = ViewState.home
-    @State private var selectedFromStation: Station?
-    @State private var selectedToStation: Station?
+    @State private var selectedStarting: Station?
+    @State private var selectedDestination: Station?
     @State private var previousView: ViewState = ViewState.home
     @State private var selectedRoute: [Route]?
     @State private var selectedRouteFees: Float = 0
     
     var body: some View {
         ZStack {
-            MapView(previousView: $previousView,
-                    selectedFromStation: $selectedFromStation,
-                    selectedToStation: $selectedToStation)
+//            MapView(previousView: $previousView,
+//                    selectedStarting: $selectedStarting,
+//                    selectedDestination: $selectedDestination)
+            
+            GraphicMapView(previousView: $previousView,
+                           selectedStarting: $selectedStarting,
+                           selectedDestination: $selectedDestination)
                 
             switch currentView {
             case .home:
@@ -27,29 +31,29 @@ struct HomeView: View {
                 
                 StationSearchBox(
                     currentView: $currentView,
-                    selectedFromStation: $selectedFromStation,
-                    selectedToStation: $selectedToStation
+                    selectedStarting: $selectedStarting,
+                    selectedDestination: $selectedDestination
                 )
                 
-            case .searchFromStation, .searchToStation:
+            case .searchStartingStation, .searchDestination:
                 StationListView(
                     currentView: $currentView,
-                    selectedFromStation: $selectedFromStation,
-                    selectedToStation: $selectedToStation,
+                    selectedStarting: $selectedStarting,
+                    selectedDestination: $selectedDestination,
                     previousView: $previousView
                 )
                 
             case .getRoutes:
                 GetRoutesListView(currentView: $currentView,
-                                  selectedFromStation:  $selectedFromStation,
-                                  selectedToStation: $selectedToStation,
+                                  selectedStarting:  $selectedStarting,
+                                  selectedDestination: $selectedDestination,
                                   selectedRoute: $selectedRoute,
                                   selectedRouteFees: $selectedRouteFees)
                 
             case .routeCreated:
                 RouteCreatedView(currentView:  $currentView,
-                                 selectedFromStation: $selectedFromStation,
-                                 selectedToStation: $selectedToStation,
+                                 selectedStarting: $selectedStarting,
+                                 selectedDestination: $selectedDestination,
                                  selectedRoute: $selectedRoute,
                                  selectedRouteFees: $selectedRouteFees)
             }

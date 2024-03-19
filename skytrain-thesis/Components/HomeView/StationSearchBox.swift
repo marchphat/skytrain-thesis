@@ -15,11 +15,11 @@ struct StationSearchBox: View {
     @State private var toText = "To"
     
     @Binding var currentView: ViewState
-    @Binding var selectedFromStation: Station?
-    @Binding var selectedToStation: Station?
+    @Binding var selectedStarting: Station?
+    @Binding var selectedDestination: Station?
     
     private var isInputCompleted: Bool  {
-        return selectedFromStation == nil || selectedToStation == nil
+        return selectedStarting == nil || selectedDestination == nil
     }
     
     var body: some View {
@@ -29,17 +29,17 @@ struct StationSearchBox: View {
                 
                 
                 VStack (spacing: 10) {
-                    StationSearchField(selectedStation: $selectedFromStation, inputType: $fromText)
+                    StationSearchField(selectedStation: $selectedStarting, inputType: $fromText)
                         .onTapGesture {
                             DispatchQueue.main.async {
-                                currentView = .searchFromStation
+                                currentView = .searchStartingStation
                             }
                         }
                     
-                    StationSearchField(selectedStation: $selectedToStation, inputType: $toText)
+                    StationSearchField(selectedStation: $selectedDestination, inputType: $toText)
                         .onTapGesture {
                             DispatchQueue.main.async {
-                                currentView = .searchToStation
+                                currentView = .searchDestination
                             }
                         }
                 }

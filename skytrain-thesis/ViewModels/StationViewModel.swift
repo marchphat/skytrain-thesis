@@ -94,7 +94,7 @@ final class StationViewModel: ObservableObject {
         }
     }
     
-    private func isMatched(station: Station, selectedLine: StationLine, currentView: ViewState, selectedFromStation: Station?, selectedToStation: Station?) -> Bool {
+    private func isMatched(station: Station, selectedLine: StationLine, currentView: ViewState, selectedStarting: Station?, selectedDestination: Station?) -> Bool {
         let lineMatch = selectedLine == .all || station.line?.lowercased() == selectedLine.rawValue
         var searchTextMatch = true
         
@@ -105,22 +105,22 @@ final class StationViewModel: ObservableObject {
         }
         
         switch currentView {
-        case .searchFromStation:
-            return lineMatch && searchTextMatch && (station.stationId! != selectedToStation?.stationId)
-        case .searchToStation:
-            return lineMatch && searchTextMatch && (station.stationId! != selectedFromStation?.stationId)
+        case .searchStartingStation:
+            return lineMatch && searchTextMatch && (station.stationId! != selectedDestination?.stationId)
+        case .searchDestination:
+            return lineMatch && searchTextMatch && (station.stationId! != selectedStarting?.stationId)
         default:
             return false
         }
     }
     
-    func filterSelectedStations(selectedLine: StationLine, currentView: ViewState, selectedFromStation: Station?, selectedToStation: Station?) {
+    func filterSelectedStations(selectedLine: StationLine, currentView: ViewState, selectedStarting: Station?, selectedDestination: Station?) {
         selectedStations = allStations.filter { station in
             return isMatched(station: station,
                              selectedLine: selectedLine,
                              currentView: currentView,
-                             selectedFromStation: selectedFromStation,
-                             selectedToStation: selectedToStation)
+                             selectedStarting: selectedStarting,
+                             selectedDestination: selectedDestination)
         }
     }
     

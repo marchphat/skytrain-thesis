@@ -10,9 +10,9 @@ import SwiftUI
 struct StationSearchList: View {
     @Binding var selectedStation: [Station]
     @Binding var currentView: ViewState
-    @Binding var selectedFromStation: Station?
-    @Binding var selectedToStation: Station?
     @Binding var previousView: ViewState
+    @Binding var selectedStarting: Station?
+    @Binding var selectedDestination: Station?
     
     var body: some View {
         ScrollView(.vertical, showsIndicators: true) {
@@ -23,12 +23,12 @@ struct StationSearchList: View {
                         .contentShape(Rectangle())
                         .onTapGesture {
                             switch currentView {
-                            case .searchFromStation:
-                                selectedFromStation = station
-                                previousView = .searchFromStation
-                            case .searchToStation:
-                                selectedToStation = station
-                                previousView = .searchToStation
+                            case .searchStartingStation:
+                                selectedStarting = station
+                                previousView = .searchStartingStation
+                            case .searchDestination:
+                                selectedDestination = station
+                                previousView = .searchDestination
                             default:
                                 print("DEBUG: This view state is not for searching station.")
                             }

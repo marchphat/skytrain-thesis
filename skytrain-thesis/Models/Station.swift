@@ -18,6 +18,8 @@ struct Station: Codable, Equatable, Identifiable {
     let lineColor: String?
     var arriveTime: String?
     let isExtended: Bool
+    let positionX: Double
+    let positionY: Double
     
     var coordinate: CLLocationCoordinate2D {
         CLLocationCoordinate2D(latitude: self.latitude, longitude: self.longitude)
@@ -32,6 +34,8 @@ struct Station: Codable, Equatable, Identifiable {
         case latitude
         case longitude
         case arriveTime
+        case positionX
+        case positionY
     }
 }
 

@@ -19,7 +19,7 @@ struct CloseButton: View {
             }
         }) {
             switch currentView {
-            case .searchFromStation, .searchToStation:
+            case .searchStartingStation, .searchDestination:
                 CircleClostButton()
                 
             case .getRoutes:
